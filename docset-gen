@@ -19,7 +19,7 @@ require 'sqlite3'  # database interface
 require 'nokogiri' # awesome XML/HTML parser
 require 'plist'    # used to manipulate Dash Docset info
 
-COUCHDB_VERSION = '1.4'
+COUCHDB_VERSION = ENV['COUCHDB_VERSION']
 
 # This list of Entry types was manually scraped from: http://kapeli.com/docsets
 SUPPORTED_ENTRY_TYPES = %w[
